@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>结构伪类选择器</title>
+    <!--  不需要在节点上新增额外的id或者class属性 ，需要我们知道节点的位置（下标）-->
+   <style  type="text/css">
+       /*01.改变ul中第一个li的样式
+       ul li:first-child{
+        color: red;
+       }*/
+       /*02.改变ul中最后一个li的样式
+       ul li:last-child{
+        color: red;
+       }*/
+
+       /*03.改变第3个div的样式
+         body中如果第3个元素是div就改变样式，
+         否则都没有效果！ 着重于顺序！
+      body div:nth-child(3){
+           color: red;
+       }*/
+       /*04.改变页面中第2个span元素的样式
+       nth-of-type： 先查询类型 再看顺序
+      body span:nth-of-type(2){
+           color: red;
+       }
+
+      body div:nth-of-type(3){
+           color: red;
+       }
+*/
+   </style>
+
+
+</head>
+<body>
+
+   <div>div1</div>
+   <div>div2</div>
+   <span>span1</span>
+   <div>div3</div>
+   <span>span2</span>
+
+<ul>
+    <li>第1个列表的第1项</li>
+    <li>第1个列表的第2项</li>
+    <li>第1个列表的第3项</li>
+    <li>第1个列表的第4项</li>
+</ul>
+<ul>
+    <li>第2个列表的第1项</li>
+    <li>第2个列表的第2项</li>
+    <li>第2个列表的第3项</li>
+    <li>第2个列表的第4项</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>防止父级边框塌陷</title>
+
+    <style type="text/css">
+        #main{
+            border: 1px solid red;
+            /*01.给父级div设置高度
+            height: 500px;*/
+            /* 03. 设置溢出处理 overflow: hidden;*/
+        }
+
+        #a,#b,#c{ /*三个小盒子*/
+            border: 1px solid red;
+            float: left; /* 01.因为 父级div没有设置高度和宽度！  子的div右浮动了？脱离文档流   位置没了*/
+        }
+
+        /*02. 增加空div  防止父级边框塌陷
+        .clear{
+            border: 1px solid black;
+            clear: both;
+        }*/
+
+        /*04.推荐使用  after伪类 */
+        .clear:after{
+            display: block;/*在#main div的左后一个位置增加一个块元素*/
+            content: '';   /*块元素的内容什么都没有*/
+            clear: both;  /*清除浮动*/
+        }
+    </style>
+</head>
+<body>
+<div id="main" class="clear">
+    <div id="a"><img src="../images/b.png"></div>
+    <div id="b"><img src="../images/b.png"></div>
+    <div id="c"><img src="../images/b.png"></div>
+    <!--02. 增加空div  防止父级边框塌陷    <div  class="clear"></div> -->
+</div>
+</body>
+</html>

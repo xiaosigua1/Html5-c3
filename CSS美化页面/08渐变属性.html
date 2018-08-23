@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>渐变属性</title>
+    <!--
+      01.线性渐变
+          颜色按照从上到下或者从左到右 等顺序发生的变化
+      02.径向渐变
+        不是按照直线的顺序！ 圆形，椭圆！从一个点向所有的方向混合！
+    -->
+
+    <style type="text/css">
+        div{
+            border: 1px  solid red;
+            height: 200px;
+            width: 200px;
+            background: linear-gradient(to left top,red,green);
+            /*  to top :方向
+                red:第1个颜色
+                black:第2个颜色
+IE浏览器是Trident内核，加前缀：-ms-
+Chrome浏览器是Webkit内核，加前缀：-webkit-
+Safari浏览器是Webkit内核，加前缀：-webkit-
+Opera浏览器是Blink内核，加前缀：-o-
+Firefox浏览器是Mozilla内核，加前缀：-moz-
+                */
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+
+  <style type="text/css">
+      /* 01.改变元素id="first"的样式
+     div[id="first"]{
+         color: red;
+     }*/
+      /*02.改变所有id属性元素
+      div[id]{
+          color: red;
+      }*/
+      /*03.改变所有id属性值以h开头元素
+      div[id^="h"]{
+          color: red;
+      }*/
+      /*04.改变所有id属性值以a结尾元素
+      div[id$="a"]{
+          color: red;
+      }*/
+      /*04.改变所有id属性值包含i的元素
+      div[id*="i"]{
+          color: red;
+      }*/
+
+
+  </style>
+
+
+</head>
+<body>
+  <div id="first">第1个</div>
+  <div id="haha">第2个</div>
+  <div id="heihei">第3个</div>
+  <div>第4个</div>
+  <div style="color: red;font-size: 50px">第5个</div>
+</body>
+</html>

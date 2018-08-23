@@ -1,0 +1,4 @@
+h1{ /* h1 页面中所有的h1标签*/
+    color: red; /*color 属性    red 属性值*/
+    font-size: 50px;
+}

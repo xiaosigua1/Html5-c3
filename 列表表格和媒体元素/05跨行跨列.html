@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>跨行跨列</title>
+
+    <!--
+    都必须写在td中
+        rowspan :跨行
+        colspan:跨列
+    -->
+</head>
+<body>
+
+  <table border="1px" cellpadding="5px">
+        <tr>
+            <td colspan="3"  align="center"> 学生成绩表</td>
+        </tr>
+
+        <tr>
+             <td rowspan="2">张三</td>
+             <td>math</td>
+             <td>80</td>
+        </tr>
+        <tr>
+             <td>java</td>
+             <td>90</td>
+        </tr>
+        <tr>
+             <td rowspan="2">李四</td>
+             <td>math</td>
+             <td>85</td>
+        </tr>
+        <tr>
+             <td>java</td>
+             <td>95</td>
+        </tr>
+
+
+  </table>
+
+</body>
+</html>

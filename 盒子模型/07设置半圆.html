@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>设置半圆</title>
+      <style type="text/css">
+          div{
+              background: pink;
+              margin: 20px;
+          }
+          div:nth-of-type(1){
+              width: 100px;
+              height: 50px;
+              border-radius: 50px 50px 0 0;/* 左上和右上*/
+          }
+
+          div:nth-of-type(2){
+              width: 100px;
+              height: 50px;
+              border-radius: 0 0 50px 50px ;/* 左下和右下*/
+          }
+          div:nth-of-type(3){
+              width: 50px;  /*高度和宽度需要调整*/
+              height: 100px;
+              border-radius:50px 0 0  50px ;/* 左上和左下*/
+          }
+          div:nth-of-type(4){
+              width: 50px;
+              height: 100px;
+              border-radius: 0  50px 50px 0  ;/* 右上和右下*/
+          }
+
+
+
+      </style>
+
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

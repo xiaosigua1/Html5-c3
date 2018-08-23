@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>css3变形</title>
+
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        li{
+            list-style: none;
+            float: left;
+            margin-left: 15px;
+            background: rgba(230,130,0,0.5);
+            border-radius: 5px;/*圆角属性*/
+        }
+
+        li:hover{
+            /*transform 变形属性*/
+            /* transform:translate(4px,5px) ;平移*/
+            transform: rotate(90deg) scale(1.5);/* 旋转的同时放大1.5倍*/
+            /*  transform: skewY(20deg);
+             transform: skewX(20deg); 倾斜属性*/
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a:hover{
+            background: rgba(150,230,100,0.5);
+            border-radius: 5px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">服装城</a></li>
+    <li><a href="#">美妆馆</a></li>
+    <li><a href="#">超市</a></li>
+    <li><a href="#">全球购</a></li>
+    <li><a href="#">闪购</a></li>
+    <li><a href="#">团购</a></li>
+    <li><a href="#">拍卖</a></li>
+    <li><a href="#">金融</a></li>
+</ul>
+</body>
+</html>

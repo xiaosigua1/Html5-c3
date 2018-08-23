@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <!--
+      form表单的意义：
+      01.获取用户的输入 ==》收集数据
+      02.将用户的输入发送到服务器===》与服务器产生交互
+
+
+      action:我们获取完用户的输入之后 提交到的服务器地址！
+              #:代表当前页面！
+              也可以不书写！
+
+      method：我们提交的方式！
+              可以理解成 我们
+              普通人 说话      get
+              和
+              聋哑人打手语    post
+              get和post的区别    安不安全 相对而言
+
+       01.get会在url地址栏中显示我们输入的数据
+          post会在请求头中显示用户的输入
+           F12之后选择 network  向下拉到页面的最底部 有一个  form data
+           这里有post请求的数据！
+
+       02.http协议对get和post请求都没有长度限制
+          如果对url的长度进行限制只有两种原因：
+            001.浏览器自身的设置
+            002.服务器的设置
+
+
+ input标签中的常用属性：
+         name：可以理解成标记！ 用于服务器获取我们这个表单中的元素值！  必须的！
+         value: 用户在页面中输入的值！ 我们一般可以不写！
+         maxlength:文本框的最大字节数量
+         size:表单元素的初始长度！
+
+    比如说：<input type="text" name="userName"  value="">
+    那么再我们点击注册按钮的时候，
+    会提交到服务器的数据是     userName="value的属性值"
+    服务器根据 name的属性值，获取value的属性值!
+    placeholder:占位符，提示语！不是value的值！ 只有在value属性值为空的时候显示！
+    -->
+</head>
+<body>
+
+   <form  action="#"  method="post">
+    昵称: <input type="text" name="userName"    size="100"   placeholder="请输入用户名" maxlength="50"><br/>
+     密码: <input type="password"  name="pwd"><br/>
+    性别:<input type="radio" name="sex" value="男"  checked>男
+         <input type="radio" name="sex" value="女">女<br/>
+    爱好:<input type="checkbox" name="love" value="足球" checked>足球
+       <input type="checkbox" name="love" value="乒乓球">乒乓球
+       <input type="checkbox" name="love" value="羽毛球">羽毛球
+       <input type="checkbox" name="love" value="篮球">篮球<br/>
+
+    民族:<select name="nation" size="1">
+           <option value="" >请选择</option>
+           <option value="汉族" selected>汉族</option>
+           <option value="满族">满族</option>
+           <option value="维吾尔族" >维吾尔族</option>
+         </select><br/>
+
+    协议:<textarea name="protocol"  rows="20"  cols="20">
+        xxx  xxx
+        xxx xxx
+        xxx xxx
+       </textarea>
+       <br/>
+    文件上传：  <input type="file">
+    选择颜色：   <input type="color">
+     日期：   <input type="date">
+     时间：   <input type="time">
+    邮箱:<input type="email"  name="email"><br/>
+    数字:<input type="number"  name="num" max="50" min="1"><br/>
+    滑块:<input type="range"  max="200" value="150" step="50"><br/>
+    搜索:<input type="search"  name="search"><br/>
+    QQ只读:<input name="qq"  value="501804292" readonly><br/>
+    隐藏域:   <input type="hidden"  name="hidden" value="a"><br/>
+
+
+   <label> 密码: <input type="password"  name="pwd"></label>
+   <label for="pwd"> 密码: <input type="password"  name="pwd" id="pwd"></label>
+       <br/>
+
+   正则验证手机号：<input name="phoneNum" required pattern="^1[34578]\d{9}$">
+
+    <input name="userName" required placeholder="必填项">
+       <input type="button" value="普通">
+       <input type="reset" value="重置">
+       <input type="submit" value="注册" disabled> <!-- disabled 按钮禁用-->
+
+       <button type="submit" >button</button>  <!--  默认就是提交按钮，没有value属性-->
+
+   </form>
+
+
+</body>
+</html>

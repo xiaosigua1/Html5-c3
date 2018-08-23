@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>span标签</title>
+     <!--span标签
+       想让某些文字凸显出来
+     -->
+    <style type="text/css">
+       div:first-child span{
+            color: red;
+        }
+
+       div:last-child span{
+            color: green;
+        }
+       /*同时设置body中的子元素span的风格 粗细 大小 类型*/
+        body>span{
+            font: oblique bold 50px "楷体";
+            color: red;
+        }
+        
+    </style>
+
+
+
+</head>
+<body>
+  <div><span>今天</span>是个好日子！</div>
+  <div><span>明天</span>也是个好日子！</div>
+  <span>a</span>bcdefg
+</body>
+</html>

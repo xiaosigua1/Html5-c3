@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>定位属性</title>
+    <!--
+      position
+      01.static ：默认，没有定位！  离我们最远
+      02.absolute：绝对定位
+             001.脱离了标准文档流
+             002.位置发生变化之后，位置不会被保留!后续元素会顶替之前的位置
+             003.参照离这个设置了定位属性的最近的父级元素！如果没有  就以浏览器为准
+     03.relative：相对定位
+             001.相对于自身原来的位置
+             002.没有脱离标准文档流
+             003.位置发生变化之后，位置会被保留
+     04.fixed：固定定位
+              相对于浏览器
+    -->
+
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+         div{
+             height: 50px;
+             width: 50px;
+         }
+         #box{  /*大盒子*/
+             height: 300px;
+             width: 300px;
+             border: 2px solid red;
+         }
+
+
+
+       #box  div:nth-of-type(1){
+            background: red;
+           /*绝对定位*/
+           position: absolute;
+           left: 20px;  /* 距离父级元素 左边20px*/
+        }
+
+         #box  div:nth-of-type(2){
+            background: orange;
+             position:static ;/*默认值*/
+        }
+
+         #box  div:nth-of-type(3){
+            background: pink;
+             /*相对定位*/
+             position: relative;
+             bottom:20px;
+        }
+
+
+
+        #box  div:nth-of-type(4){
+            background: red;
+            /*固定定位*/
+            position: fixed;
+            left: 30px;
+            top: 30px;
+        }
+
+        #box  div:nth-of-type(5){  /*如果两个盒子设置的定位属性相同，默认按照html结构元素顺序 后面会覆盖前面*/
+            background: greenyellow;
+            /*固定定位
+            position: fixed;
+            left: 30px;
+            top: 30px;*/
+        }
+
+        /*层级关系
+        固定定位   > 相对定位   >   绝对定位   >    默认static
+        */
+
+    </style>
+
+</head>
+<body>
+<div  id="box">
+    <div>第1个盒子</div>
+    <div>第2个盒子</div>
+    <div>第3个盒子</div>
+    <div>第4个盒子</div>
+    <div>第5个盒子</div>
+</div>
+</body>
+</html>

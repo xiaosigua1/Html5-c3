@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>标签选择器</title>
+    <!-- 内部样式设置  style标签应该写在head标签中
+    <style type="text/css">
+        h1{ /* h1 页面中所有的h1标签*/
+            color: red; /*color 属性    red 属性值*/
+            font-size: 50px;
+        }
+    </style>   我们css的优势之一是   网页和样式的分离-->
+
+    <!-- 链接式
+    <link rel="stylesheet" type="text/css" href="css/first.css">-->
+
+    <!--导入式-->
+    <style type="text/css">
+        @import "css/first.css";
+    </style>
+
+</head>
+<body>
+<!--需求：让页面中所有的h1标签 字体颜色为 红色  字体大小50px-->
+   <h1 style="color: pink">这是1级标题</h1>  <!--验证优先级-->
+   <h1>这是1级标题</h1>
+   <h1>这是1级标题</h1>
+
+
+
+
+</body>
+</html>

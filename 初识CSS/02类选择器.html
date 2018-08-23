@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>类选择器</title>
+    <!--需求： 让页面中的class属性值为box的盒子颜色变成红色-->
+    <style type="text/css">
+        .box{ /*.box  类选择器   选取页面中的class属性值为box的元素*/
+            color:red;
+        }
+
+        /* 我想让2 3 盒子也有这个样式*/
+        .boxSize{
+            font-size: 52px;
+        }
+
+    </style>
+</head>
+<body>
+
+   <div class="boxSize">这是第1个盒子</div>
+   <!--说明这个div同时具有两个class样式-->
+   <div class="box boxSize">这是第2个盒子</div>
+   <div class="box boxSize">这是第3个盒子</div>
+   <div class="box">这是第4个盒子</div>
+
+</body>
+</html>

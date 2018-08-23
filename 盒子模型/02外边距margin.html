@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>外边距margin</title>
+
+    <style  type="text/css">
+        *{  /*去掉网页中所有元素的内外边距*/
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        div{
+            /*设置盒子的宽高*/
+            height: 150px;
+            width: 150px;
+            /*设置盒子的边框*/
+            border: 1px solid red;
+            /*设置外边距  元素以左上角为准
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;*/
+            /*设置上下20px   左右50px
+              设置边距的时候  顺序 是 上右下左！
+            margin: 20px 50px;*/
+            margin: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+  <div><img src="../images/b.png" alt="这是一个图片"></div>
+  <div><img src="../images/b.png" alt="这是一个图片"></div>
+</body>
+</html>

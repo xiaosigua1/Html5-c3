@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>相邻兄弟节点选择器</title>
+    <!--   需求：
+       改变id=""second"的div元素后面第一个兄弟节点的样式
+    -->
+    <style  type="text/css">
+         #second+span{
+             color: red;
+         }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div>  儿子div1
+         <span>相对于body来说是孙子span1</span>
+    </div>
+
+    <div id="second">儿子div2
+        <span>相对于body来说是孙子span2</span>
+    </div>
+
+
+    <span>相对于body来说是儿子span1</span>
+    <span>相对于body来说是儿子span2</span>
+
+
+</body>
+</html>

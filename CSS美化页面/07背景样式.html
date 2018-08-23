@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>背景样式</title>
+
+   <style type="text/css">
+
+       div{
+           border: 1px solid red;
+           height: 200px;
+           width: 200px;
+           background-color: aqua; /* 01.给div增加背景颜色*/
+           background-image: url("../images/b.png"); /* 02.给div增加背景图片   图片会把颜色覆盖，其实颜色在图片后面*/
+           background-repeat: no-repeat;/*03.设置图片的填充方式*/
+           /*  background-position: 20px 10px;04.设置图片定位  设置size时 需要 注释*/
+          /* background:color  image  position repeat ;  简写的规范*/
+           /*
+            background-size:contain;
+           background-size：背景图片的尺寸
+            auto:默认值，使用图片的大小
+            cover:让整个图片正好填充整个盒子
+            contain：让图片自动的方法或者缩小 适应盒子的大小
+            percentage：使用百分比  手动的校正图片在盒子中的大小 100%;
+           */
+       }
+
+
+   </style>
+
+
+</head>
+<body>
+    <div></div>
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>并集选择器</title>
+    <!-- 需求
+      给id="mySpan1" ，class="mySpan2" 标签是div的所有元素
+      设置相同的样式！
+    -->
+    <style  type="text/css">
+        /*  多个选择器都具有的样式.  每个选择器之间使用,隔开
+          多个选择器没有顺序
+        */
+        #mySpan1,.mySpan2,div{
+            color:red;
+        }
+    </style>
+
+
+
+</head>
+<body>
+  <div>第1个盒子</div>
+  <div>第2个盒子</div>
+<span id="mySpan1">这是第1个span</span>
+<span class="mySpan2">这是第2个span</span>
+</body>
+</html>

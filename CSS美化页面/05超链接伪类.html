@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>超链接伪类</title>
+    <!--
+      a:link        我们还没有访问超链接时的样式
+      a:visited     访问之后超链接的样式
+      a:hover       鼠标悬停在超链接上的样式
+      a:active      鼠标点击未释放
+       顺序一定不能有误！
+    -->
+
+
+    <style type="text/css">
+        a:link{
+            color: red;
+        }
+        a:visited{
+            color: greenyellow;
+        }
+        a:hover{
+            color: deeppink;
+        }
+        a:active{
+            color: yellow;
+        }
+
+        div[id="haha2"]:hover{
+            color: red;
+            text-shadow: pink 2px 2px 1px;
+        }
+
+
+        span:hover{
+            background: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<span>haha</span>
+  <a href="#">大家辛苦了！</a>
+
+<div id="haha">哈哈</div>
+<div id="haha1">哈哈1</div>
+<div id="haha2">哈哈2</div>
+</body>
+</html>

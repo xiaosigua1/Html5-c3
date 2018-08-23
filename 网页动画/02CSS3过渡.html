@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>CSS3过渡</title>
+
+    <style type="text/css">
+               *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            text-align: center;
+            line-height: 100px;
+            transition:all  3s linear 2s;
+            /**
+            all：    transition-property
+            3s :     transition-duration
+            linear:  transition-timing-function
+            2s:      transition-delay
+            */
+        }
+
+        div:hover{
+            background-color: red;
+            font-size: 25px;
+            transform: rotate(90deg) scale(1.5); /*旋转的同时放大1.5倍  这两个效果 一次性到位*/
+            /*transition属性的值：
+             01.transition-property:过渡的css属性的名称（color,font-size,background）等！
+                                想给多个属性设置过渡效果，使用all！
+             02.transition-duration:过渡效果需要的时间！
+             03.transition-timing-function:设置速度曲线！
+                         ease：慢速开始，之后变快！
+                       linear：匀速!
+                       ease-in:慢速开始！
+                       ease-out:慢速结束！
+             04.transition-delay:过度效果开始前需要等待的时间！默认 0s!
+            */
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div>
+    大家辛苦了！
+</div>
+</body>
+</html>

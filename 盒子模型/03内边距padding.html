@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>内边距padding</title>
+
+    <style  type="text/css">
+        *{  /*去掉网页中所有元素的内外边距*/
+            margin: 0px;
+            padding: 0px;
+        }
+        /*设置大盒子*/
+  #bigBox{
+      /*设置盒子的宽高*/
+      height: 200px;
+      width: 200px;
+      /*设置盒子的边框*/
+      border: 1px solid red;
+      /*padding-left:5px ;设置小盒子距离大盒子的左内边距*/
+  }
+  /*设置小盒子*/
+  #image{
+      /*设置盒子的宽高*/
+      height: 150px;
+      width: 150px;
+      /*设置盒子的边框*/
+      border: 1px dashed pink;
+      margin-left: 5px;
+  }
+
+    </style>
+
+</head>
+<body>
+  <div id="bigBox">  <!--大盒子-->
+      <div id="image"> <!--小盒子-->
+          <img src="../images/b.png" alt="这是一个图片"><!--内容-->
+      </div>
+  </div>
+</body>
+</html>

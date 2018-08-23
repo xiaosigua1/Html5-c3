@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>网页居中</title>
+    <!--
+      网页居中的必要条件：
+      01.必须是一个块元素
+      02.必须设置固定宽度
+    -->
+    <style  type="text/css">
+        *{  /*去掉网页中所有元素的内外边距*/
+              margin: 0px;
+              padding: 0px;
+          }
+        /*设置大盒子*/
+           div{
+            height: 200px; /*设置盒子的宽高*/
+            width: 200px;
+            /*设置盒子的边框*/
+            border: 1px solid red;
+              /*通过外边距设置 居中*/
+               margin:0px auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div>  <!--大盒子-->
+</div>
+
+</body>
+</html>

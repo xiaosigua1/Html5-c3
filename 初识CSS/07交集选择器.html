@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>交集选择器</title>
+   <!--  交集选择器的规则
+    01：标签选择器+id选择器
+    02：标签选择器+类选择器
+    03.多个选择器直接连着写，不需要有符号隔开
+    必须标签选择器在前！-->
+
+
+    <style type="text/css">
+       /* 需求：
+         页面中 class="mySpan2" 并且 标签是div的元素  设置样式
+       */
+       div.mySpan2{
+           color: red;
+       }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+            <div>第1个盒子</div>
+
+            <div  class="mySpan2">第2个盒子</div>
+
+            <span id="mySpan1">这是第1个span</span>
+
+            <span class="mySpan2">这是第2个span</span>
+</body>
+</html>

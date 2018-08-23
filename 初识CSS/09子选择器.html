@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>子选择器</title>
+    <!--   需求：
+       改变body中 所有子元素是span的样式
+        只包含子节点
+    -->
+    <style  type="text/css">
+         body>span{
+             color: red;
+         }
+         /*选择body中子元素是div的节点，如果div中还有其他的节点，也会随之改变*/
+         body>div{
+             color: red;
+         }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div>  儿子div1
+         <span>相对于body来说是孙子span1</span>
+    </div>
+
+    <div>儿子div2
+         <span>相对于body来说是孙子span2</span>
+    </div>
+
+
+    <span>相对于body来说是儿子span1</span>
+    <span>相对于body来说是儿子span2</span>
+
+
+</body>
+</html>

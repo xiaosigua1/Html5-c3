@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>display属性</title>
+    <!-- 实现 块元素和 内联元素的相互转换 -->
+
+    <!-- 需求：
+    01.设置块元素2和3 在一行显示
+    02.设置块元素2和3  的边框和宽度 高度 ==>因为已经变成了内联元素 所以宽度 高度 无效
+    03.我们想块元素2和3 在一行显示  但是  还能设置 宽度 高度  ？？？display: inline-block;
+    04.把内联元素3  变成块元素  并且设置  宽度 高度
+    -->
+    <style type="text/css">
+       div:nth-of-type(2),div:nth-of-type(3){
+           /* display: inline;  内联元素*/
+           display: inline-block; /*   行内块元素*/
+           border: 1px solid red;
+           height: 50px;
+           width: 50px;
+       }
+       span:nth-child(3){
+            border: 1px solid red;
+            display:block;/*块元素*/
+            height: 50px;
+            width: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+  <span>内联元素1</span>
+  <span>内联元素2</span>
+  <span>内联元素3</span>
+
+  <div>块元素1</div>
+  <div>块元素2</div>
+  <div>块元素3</div>
+
+
+
+</body>
+</html>

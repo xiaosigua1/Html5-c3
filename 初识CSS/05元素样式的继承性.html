@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>元素的继承性</title>
+     <!--  需求 ：
+       给页面中id为first的div设置样式
+       给页面中id为second的div设置样式
+
+     -->
+
+    <style type="text/css">
+         #first{
+             color: red;
+         }
+
+        #second{
+            color: pink;
+        }
+        #third{
+            color: greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+  <div id="first">  第一个
+                       <div id="second">  第二个
+                           <div id="third">
+                                  第三个
+                           </div>
+                       </div>
+  </div>
+</body>
+</html>
